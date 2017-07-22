@@ -1,0 +1,33 @@
+# Project: Project1
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = ATTENDENCE_private.res
+OBJ  = ctl_one.o $(RES)
+LINKOBJ  = ctl_one.o $(RES)
+LIBS =  -L"I:/SECURITY/lib" -mwindows  
+INCS =  -I"I:/SECURITY/include" 
+CXXINCS =  -I"I:/SECURITY/lib/gcc/mingw32/3.4.2/include"  -I"I:/SECURITY/include/c++/3.4.2/backward"  -I"I:/SECURITY/include/c++/3.4.2/mingw32"  -I"I:/SECURITY/include/c++/3.4.2"  -I"I:/SECURITY/include" 
+BIN  = ATTENDENCE.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before ATTENDENCE.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "ATTENDENCE.exe" $(LIBS)
+
+ctl_one.o: ctl_one.c
+	$(CPP) -c ctl_one.c -o ctl_one.o $(CXXFLAGS)
+
+ATTENDENCE_private.res: ATTENDENCE_private.rc ctl_one.rc 
+	$(WINDRES) -i ATTENDENCE_private.rc --input-format=rc -o ATTENDENCE_private.res -O coff 

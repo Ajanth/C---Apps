@@ -1,0 +1,115 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 307, 196
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ATTENDANCE ACCURACY 0.0.1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "How Many Periods Did You Attend?",IDC_STATIC,7,10,140,8
+    EDITTEXT        IDC_NUMBER,150,7,21,14,ES_NUMBER,WS_BORDER
+    LTEXT           "Periods",IDC_EMER7,177,10,23,8
+    //LISTBOX         IDC_LIST,7,25,138,106,LBS_NOINTEGRALHEIGHT | 
+      //              LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&SUBMIT",IDC_ADD,135,25,60,14,WS_BORDER
+    PUSHBUTTON      "&Help!",IDC_REMOVE,240,10,50,14,WS_BORDER
+    PUSHBUTTON      "&Exit",IDC_CLEAR,240,70,50,14,WS_BORDER
+    PUSHBUTTON      "&About",IDC_LIST,240,40,50,14,WS_BORDER
+    PUSHBUTTON      "&Refresh",IDC_REFRESH,120,125,50,14,WS_BORDER
+    LTEXT           "     YOUR CURRENT ATTENDANCE PERCENTAGE IS",10,50,140,185,8
+    LTEXT           "REFRESH PLEASE",IDC_PERK,125,160,185,8
+    PUSHBUTTON      "&RESET",IDC_RESET,245,180,50,14,WS_BORDER
+    PUSHBUTTON      "&STATISTICS",IDC_STAC,240,55,50,14,WS_BORDER
+    LTEXT           "You Attended",IDC_STACS,65,99,150,14
+    LTEXT           "Out Of",IDC_STACSE,135,99,160,14
+    LTEXT           "",IDC_EMER,115,99,18,14
+    LTEXT           "",IDC_EMER1,159,99,28,14
+    LTEXT           "Periods So Far",IDC_EMER2,175,99,180,14
+    PUSHBUTTON      "&Options",IDC_EMER3, 240,25,50,14,WS_BORDER                                     
+        LTEXT           "",IDC_EMER6,7,39,130,8
+        LTEXT           "",IDC_EMER4,170,40,23,10
+   PUSHBUTTON      "&ADD",IDC_BUT1,50,70,50,14,WS_BORDER
+   PUSHBUTTON      "&CANCEL",IDC_BUT2,110,70,50,14,WS_BORDER     
+   
+    END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        VERTGUIDE, 145
+        VERTGUIDE, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

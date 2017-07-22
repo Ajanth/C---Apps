@@ -1,0 +1,103 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 300,150
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FOLDER PASSWORD"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "SELECT A FOLDER TO LOCK OR UNLOCK",1010,60,5,200,8 
+    LTEXT           "FOLDER PATH",IDC_STATIC,5,23,50,8
+    LTEXT           "SET PASSWORD",IDC_TEXTP,80,53,100,15
+    EDITTEXT        IDC_TEXT,60,20,120,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "BROWSE",IDC_ADD,180,20,40,14,WS_BORDER
+    PUSHBUTTON      "&HELP",IDC_REMOVE,222,20,40,14,WS_BORDER
+   // LTEXT           "SET PASSWORD",IDC_STATIC,5,32,70,8
+   EDITTEXT        IDC_SHOWCOUNT,150,50,90,15,ES_PASSWORD
+    PUSHBUTTON      "&LOCK FOLDER",IDC_CLEAR,50,50,90,15,WS_BORDER
+      PUSHBUTTON      "&UNLOCK FOLDER",IDC_LIST,150,50,90,15,WS_BORDER
+    PUSHBUTTON      "&Exit",IDC_HIDE,110,120,90,14,WS_BORDER
+    PUSHBUTTON      "&LOCK",IDC_LOCK,245,50,40,14,WS_BORDER
+    
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        VERTGUIDE, 145
+        VERTGUIDE, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
