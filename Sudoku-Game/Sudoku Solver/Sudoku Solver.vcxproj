@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2BF2C93F-A075-4765-97D3-3F534DBBD1CA}</ProjectGuid>
+    <RootNamespace>SudokuSolver</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>J:\Microsoft Visual Studio 8\SDK\v2.0\include;J:\Microsoft Visual Studio 8\VC\PlatformSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BTSButton.cpp" />
+    <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="Cgenerator.cpp" />
+    <ClCompile Include="Error.cpp" />
+    <ClCompile Include="Exception.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="MyEdit.cpp" />
+    <ClCompile Include="Pos.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Sudoku Solver.cpp" />
+    <ClCompile Include="Sudoku SolverDlg.cpp" />
+    <ClCompile Include="SudokuSolver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BTSButton.h" />
+    <ClInclude Include="Cell.h" />
+    <ClInclude Include="Cgenerator.h" />
+    <ClInclude Include="Error.h" />
+    <ClInclude Include="Exception.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="MyEdit.h" />
+    <ClInclude Include="Pos.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Sudoku Solver.h" />
+    <ClInclude Include="Sudoku SolverDlg.h" />
+    <ClInclude Include="SudokuSolver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="H:\Aqua_button_set\1.bmp" />
+    <Image Include="..\a.ico" />
+    <Image Include="..\about.bmp" />
+    <Image Include="..\againabout.bmp" />
+    <Image Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\bebo.ico" />
+    <Image Include="..\bitmap33.bmp" />
+    <Image Include="h:\aqua_button_set\bitmap4.bmp" />
+    <Image Include="H:\Aqua_button_set\cooltext632316138.bmp" />
+    <Image Include="H:\Aqua_button_set\cooltext632316138MouseOver.bmp" />
+    <Image Include="H:\Aqua_button_set\cooltext632354098.bmp" />
+    <Image Include="J:\Aqua_button_set\cooltext632354098.bmp" />
+    <Image Include="J:\Aqua_button_set\cooltext632354098MouseOver.bmp" />
+    <Image Include="H:\Aqua_button_set\cooltext632354098MouseOver.bmp" />
+    <Image Include="..\cooltext632658216.bmp" />
+    <Image Include="..\cooltext632659620.bmp" />
+    <Image Include="..\cooltext632659620.bmp.bmp" />
+    <Image Include="..\cooltext632765614.bmp.bmp" />
+    <Image Include="..\cooltext632765614MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext632781046.bmp.bmp" />
+    <Image Include="..\cooltext632781046MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext632791535.bmp.bmp" />
+    <Image Include="..\cooltext632791535MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext632822060.bmp.bmp" />
+    <Image Include="..\cooltext632822060MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext632823051.bmp.bmp" />
+    <Image Include="..\cooltext632823051MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext632865433.bmp" />
+    <Image Include="..\cooltext632865433MouseOver.bmp" />
+    <Image Include="..\cooltext632865852.bmp" />
+    <Image Include="..\cooltext632865852MouseOver.bmp" />
+    <Image Include="..\cooltext633577223.bmp.bmp" />
+    <Image Include="..\cooltext633577223MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext633586344.bmp.bmp" />
+    <Image Include="..\cooltext633586344MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext635192234.bmp.bmp" />
+    <Image Include="..\cooltext635192234MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext635192600.bmp.bmp" />
+    <Image Include="..\cooltext635192600MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext635192890.bmp.bmp" />
+    <Image Include="..\cooltext635192890MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext635231263.bmp.bmp" />
+    <Image Include="..\cooltext635231263MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext635251210.bmp.bmp" />
+    <Image Include="..\cooltext635251210MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext639818844.bmp.bmp" />
+    <Image Include="..\cooltext639818844MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext641161588.bmp.bmp" />
+    <Image Include="..\cooltext641161588MouseOver.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641223679.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641223679MouseOver.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641223934.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641223934MouseOver.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641224100.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641224100MouseOver.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641224278.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641224278MouseOver.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641224430.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641224430MouseOver.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641224593.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641224593MouseOver.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641224778.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641224778MouseOver.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641224954.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641224954MouseOver.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641225122.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641225122MouseOver.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641242389.bmp.bmp" />
+    <Image Include="..\New Folder\cooltext641242389MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext642988546.bmp.bmp" />
+    <Image Include="..\cooltext642988546MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext643574886.bmp.bmp" />
+    <Image Include="..\cooltext643574886MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext643581763.bmp.bmp" />
+    <Image Include="..\cooltext643581763MouseOver.bmp.bmp" />
+    <Image Include="..\cooltext643589366.bmp.bmp" />
+    <Image Include="..\cooltext643589366MouseOver.bmp.bmp" />
+    <Image Include="..\delicious.ico" />
+    <Image Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\delicious.ico" />
+    <Image Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\favicon(1).ico" />
+    <Image Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\favicon(2).ico" />
+    <Image Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\favicon.ico" />
+    <Image Include="C:\Program Files\TuneUp Utilities 2011\data\ico_alpha_top100_16x16.ico" />
+    <Image Include="H:\solve1.bmp" />
+    <Image Include="res\Sudoku Solver.ico" />
+    <Image Include="..\timer.bmp.bmp" />
+    <Image Include="..\Windows XP (16).bmp" />
+    <Image Include="..\Windows XP (164).bmp" />
+    <Image Include="..\Windows XP (165).bmp" />
+    <Image Include="..\Windows XP (165)_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\click.WAV" />
+    <Media Include="..\Error.WAV" />
+    <Media Include="..\hover.WAV" />
+    <Media Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\water-droplet-1.wav" />
+    <Media Include="C:\WINDOWS\Media\Windows XP Startup.wav" />
+    <Media Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\wood-cracking-1.wav" />
+    <Media Include="H:\wood-cracking-1.wav" />
+    <Media Include="H:\zippo-close-1.wav" />
+    <Media Include="J:\zippo-close-1.wav" />
+    <Media Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\zippo-close-1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\cur1001.cur" />
+    <None Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\cur1031.cur" />
+    <None Include="..\..\..\..\..\Documents and Settings\BTS-Ajanth\My Documents\Downloads\point.cur" />
+    <None Include="res\SudokuSolver.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Sudoku Solver.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Sudoku Solver.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

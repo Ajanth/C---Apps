@@ -1,0 +1,276 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SudokuSolver.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SUDOKUSOLVER_DIALOG DIALOGEX 0, 0, 473, 326
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,199,250,42,16
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,372,110,15,13
+    CONTROL         "",IDC_PREV,"Button",BS_OWNERDRAW | WS_TABSTOP,129,252,60,12
+    CONTROL         "",IDC_NXT,"Button",BS_OWNERDRAW | WS_TABSTOP,253,252,61,12
+    CONTROL         "",IDMIN,"Button",BS_OWNERDRAW | WS_TABSTOP,384,125,13,10
+    PUSHBUTTON      "",IDC_BUTTON1,27,206,57,14
+    PUSHBUTTON      "",IDC_BUTTON2,185,135,62,14
+    PUSHBUTTON      "",IDC_BUTTON3,35,225,39,14
+    PUSHBUTTON      "",IDC_MOD,186,143,63,14
+    PUSHBUTTON      "",IDC_EASY,186,126,63,14
+    PUSHBUTTON      "",IDC_DIFF,186,160,63,14
+    PUSHBUTTON      "",IDC_ASOL,185,153,62,14
+    CTEXT           "",IDC_TIME,344,147,44,22,SS_SUNKEN | NOT WS_GROUP,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "",IDC_CANCER,331,188,47,15
+    PUSHBUTTON      "",IDC_UNDO1,332,204,66,14
+    PUSHBUTTON      "7",IDC_BUTTON13,83,161,15,13,BS_ICON | WS_GROUP
+    PUSHBUTTON      "8",IDC_BUTTON14,98,161,15,13,BS_ICON | WS_GROUP
+    PUSHBUTTON      "9",IDC_BUTTON15,113,161,15,13,WS_GROUP
+    PUSHBUTTON      "4",IDC_BUTTON16,83,148,15,13,WS_GROUP
+    PUSHBUTTON      "5",IDC_BUTTON17,98,148,15,13,WS_GROUP
+    PUSHBUTTON      "6",IDC_BUTTON18,113,148,15,13,WS_GROUP
+    PUSHBUTTON      "1",IDC_BUTTON19,83,136,15,13,WS_GROUP
+    PUSHBUTTON      "2",IDC_BUTTON20,98,136,15,13,WS_GROUP
+    PUSHBUTTON      "3",IDC_BUTTON21,113,136,15,13,WS_GROUP
+    CTEXT           "",IDC_TIME2,139,269,161,19,NOT WS_GROUP,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CTEXT           "",IDC_TIME3,171,141,93,39,NOT WS_GROUP,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "",IDC_SAVE,328,222,73,14
+    PUSHBUTTON      "",IDC_MUSIC,335,171,38,16
+    PUSHBUTTON      "",IDC_CLEAR,81,123,48,12
+END
+
+IDD_DIALOGBAR DIALOGEX 0, 0, 254, 105
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "About Sudoku Game v0.01"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         258,IDC_PIC,"Static",SS_BITMAP,0,0,254,116
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "BTS"
+            VALUE "FileDescription", "Sudoku"
+            VALUE "FileVersion", "0.1"
+            VALUE "InternalName", "Sudoku Solver.exe"
+            VALUE "LegalCopyright", "BTS Inc. No Rights Reserved."
+            VALUE "LegalTrademarks", "BTS"
+            VALUE "OriginalFilename", "Sudoku Solver.exe"
+            VALUE "ProductName", "Sudoku"
+            VALUE "ProductVersion", "0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SUDOKUSOLVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 466
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SOLVE1              BITMAP                  "J:\\Aqua_button_set\\cooltext632354098.bmp"
+IDB_SOLVE2              BITMAP                  "J:\\Aqua_button_set\\cooltext632354098MouseOver.bmp"
+IDB_BITMAP13            BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext632659620.bmp"
+IDB_BITM                BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext632781046MouseOver.bmp.bmp"
+IDB_BIT                 BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext632781046.bmp.bmp"
+IDB_BITMAP19            BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext632791535MouseOver.bmp.bmp"
+IDB_BITMAP20            BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext632791535.bmp.bmp"
+IDB_BITMAP22            BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext632822060.bmp.bmp"
+IDB_BITMAP23            BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext632822060MouseOver.bmp.bmp"
+IDB_BITMAP24            BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext632823051.bmp.bmp"
+IDB_BITMAP25            BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext632823051MouseOver.bmp.bmp"
+IDB_BITMAP17            BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext632865852.bmp"
+IDB_BITMAP27            BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext632865433.bmp"
+IDB_BITMAP28            BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext632865433MouseOver.bmp"
+IDB_ABOUT2              BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext633586344.bmp.bmp"
+IDB_ABOUT1              BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext633586344MouseOver.bmp.bmp"
+IDB_DIF1                BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext635192234.bmp.bmp"
+IDB_MOD2                BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext635192890MouseOver.bmp.bmp"
+IDB_EASY2               BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext635192600MouseOver.bmp.bmp"
+IDB_MOD1                BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext635192890.bmp.bmp"
+IDB_DIF2                BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext635192234MouseOver.bmp.bmp"
+IDB_EASY1               BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext635192600.bmp.bmp"
+IDB_ASOL1               BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext635251210.bmp.bmp"
+IDB_ASOL2               BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext635251210MouseOver.bmp.bmp"
+IDB_BITMAP26            BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext632865852MouseOver.bmp"
+IDB_CANCEL1             BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext639818844MouseOver.bmp.bmp"
+IDB_CANCEL2             BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext639818844.bmp.bmp"
+IDB_BACKTRACK1          BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext641161588.bmp.bmp"
+IDB_BACKTRACK2          BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext641161588MouseOver.bmp.bmp"
+IDB_2                   BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641223679.bmp.bmp"
+IDB_2M                  BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641223679MouseOver.bmp.bmp"
+IDB_3                   BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641224100.bmp.bmp"
+IDB_3M                  BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641224100MouseOver.bmp.bmp"
+IDB_4                   BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641224278.bmp.bmp"
+IDB_4M                  BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641224278MouseOver.bmp.bmp"
+IDB_5M                  BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641224430.bmp.bmp"
+IDB_5                   BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641224430MouseOver.bmp.bmp"
+IDB_6                   BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641224593.bmp.bmp"
+IDB_6M                  BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641224593MouseOver.bmp.bmp"
+IDB_7                   BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641224778.bmp.bmp"
+IDB_7M                  BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641224778MouseOver.bmp.bmp"
+IDB_8                   BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641224954.bmp.bmp"
+IDB_8M                  BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641224954MouseOver.bmp.bmp"
+IDB_9                   BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641225122.bmp.bmp"
+IDB_9M                  BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641225122MouseOver.bmp.bmp"
+IDB_1M                  BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641242389.bmp.bmp"
+IDB_1                   BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\New Folder\\cooltext641242389MouseOver.bmp.bmp"
+IDB_SAVEM               BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext642988546MouseOver.bmp.bmp"
+IDB_SAVE                BITMAP                  "h:\\my projec\\sudoku solver\\bitmap33.bmp"
+IDB_ABOUT               BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\againabout.bmp"
+IDB_MUS2                BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext643574886MouseOver.bmp.bmp"
+IDB_MUS1                BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext643574886.bmp.bmp"
+IDB_CLEAR1              BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext643589366.bmp.bmp"
+IDB_CLEAR2              BITMAP                  "H:\\MY PROJEC\\Sudoku Solver\\cooltext643589366MouseOver.bmp.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "D:\\Documents and Settings\\BTS-Ajanth\\My Documents\\Downloads\\point.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "H:\\MY PROJEC\\Sudoku Solver\\a.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE1               WAVE                    "H:\\MY PROJEC\\Sudoku Solver\\Error.WAV"
+IDR_WAVE2               WAVE                    "H:\\MY PROJEC\\Sudoku Solver\\hover.WAV"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SudokuSolver.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

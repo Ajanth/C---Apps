@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BTSButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cgenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pos.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sudoku Solver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sudoku SolverDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SudokuSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BTSButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cgenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sudoku Solver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sudoku SolverDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SudokuSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="H:\Aqua_button_set\1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\a.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\about.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\againabout.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\bebo.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\bitmap33.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="h:\aqua_button_set\bitmap4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="H:\Aqua_button_set\cooltext632316138.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="H:\Aqua_button_set\cooltext632316138MouseOver.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="H:\Aqua_button_set\cooltext632354098.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="J:\Aqua_button_set\cooltext632354098.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="J:\Aqua_button_set\cooltext632354098MouseOver.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="H:\Aqua_button_set\cooltext632354098MouseOver.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632658216.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632659620.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632659620.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632765614.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632765614MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632781046.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632781046MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632791535.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632791535MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632822060.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632822060MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632823051.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632823051MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632865433.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632865433MouseOver.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632865852.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext632865852MouseOver.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext633577223.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext633577223MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext633586344.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext633586344MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext635192234.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext635192234MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext635192600.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext635192600MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext635192890.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext635192890MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext635231263.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext635231263MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext635251210.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext635251210MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext639818844.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext639818844MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext641161588.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext641161588MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641223679.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641223679MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641223934.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641223934MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641224100.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641224100MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641224278.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641224278MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641224430.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641224430MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641224593.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641224593MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641224778.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641224778MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641224954.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641224954MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641225122.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641225122MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641242389.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\New Folder\cooltext641242389MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext642988546.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext642988546MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext643574886.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext643574886MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext643581763.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext643581763MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext643589366.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\cooltext643589366MouseOver.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\delicious.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\delicious.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\favicon(1).ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\favicon(2).ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\favicon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="C:\Program Files\TuneUp Utilities 2011\data\ico_alpha_top100_16x16.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="H:\solve1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Sudoku Solver.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\timer.bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Windows XP (16).bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Windows XP (164).bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Windows XP (165).bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Windows XP (165)_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\click.WAV">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="..\Error.WAV">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="..\hover.WAV">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\water-droplet-1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="C:\WINDOWS\Media\Windows XP Startup.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\wood-cracking-1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="H:\wood-cracking-1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="H:\zippo-close-1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="J:\zippo-close-1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\zippo-close-1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\cur1001.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="C:\Documents and Settings\Ajanth\My Documents\Downloads\cur1031.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\Documents and Settings\BTS-Ajanth\My Documents\Downloads\point.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\SudokuSolver.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Sudoku Solver.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
